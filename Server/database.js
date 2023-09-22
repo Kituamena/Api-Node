@@ -4,7 +4,6 @@ const databasePath = new URL('db.json', import.meta.url)
 
 export class Database {
     #dataBase = {}
-    // # - significa que tornamos a variavel privada.
     constructor(){
         fs.readFile(databasePath, 'utf8')
         .then(data =>{
